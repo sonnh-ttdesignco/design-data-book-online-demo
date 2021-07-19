@@ -1,0 +1,167 @@
+.category-page {
+    padding-top: 10vh;
+    display: flex;
+}
+
+.page-side {
+    width: 40%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(90deg, #fff 0%, #fff 100%);
+}
+
+.page-heading {
+    color: #002060;
+    width: fit-content;
+    padding-left: 5rem;
+}
+
+.heading-title {
+    line-height: 4.5rem;
+    display: inline-block;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.heading-subtitle {
+    width: 100%;
+    font-size: 1.25rem;
+}
+
+
+.heading-reflect {
+    display: inline-block;
+    width: 100%;
+    font-size: 3.5rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    line-height: 1.2;
+}
+
+.text-reflect,
+.text-reflect:before,
+.text-reflect span {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.text-reflect,
+.text-reflect:before,
+.text-reflect:after {
+    position: relative;
+}
+
+.text-reflect {
+    top: -60px;
+    height: 100px;
+}
+
+.text-reflect:before {
+    content: attr(data-text);
+    top: 110px;
+    transform: scale(1, -1);
+    backface-visibility: visible;
+    z-index: 1;
+}
+
+.text-reflect:after {
+    content: '';
+    display: block;
+    top: -12px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, .75) 0%, rgba(255, 255, 255, 1) 50%);
+    z-index: 2;
+}
+
+.heading-btn {
+    margin-top: 2rem;
+    width: 15rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    -webkit-transition: all .1s ease;
+    -o-transition: all .1s ease;
+    transition: all .1s ease;
+    -webkit-box-shadow: 0 1px 3px rgb(15 85 170 / 12%), 0 1px 2px rgb(15 85 170 / 24%);
+    box-shadow: 0 1px 3px rgb(15 85 170 / 12%), 0 1px 2px rgb(15 85 170 / 24%);
+}
+
+.heading-btn:hover {
+    -webkit-box-shadow: 0 10px 20px rgb(15 85 170 / 19%), 0 6px 6px rgb(15 85 170 / 23%);
+    box-shadow: 0 10px 20px rgb(15 85 170 / 19%), 0 6px 6px rgb(15 85 170 / 23%);
+    -webkit-transform: scale(1.009);
+    -ms-transform: scale(1.009);
+    transform: scale(1.009);
+    color: white;
+}
+
+.page-main {
+    width: 60%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/assets/img/databook/background.jpg);
+}
+
+.page-category-wrap {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(90deg, #ffffff 0%, #ffffff00 100%);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    padding: 2rem 0.5rem;
+}
+
+.category-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    background-color: #d1d1d1e6;
+    color: #002060;
+    min-height: 6rem;
+    width: calc(45% - 0.5rem);
+    -webkit-transition: all .1s ease;
+    -o-transition: all .1s ease;
+    transition: all .1s ease;
+    box-shadow: 0 1px 3px rgb(73 74 76 / 19%), 0 1px 2px rgb(73 74 76 / 19%);
+}
+
+.category-item:hover {
+    color: #002060;
+    text-decoration: none;
+    z-index: 20;
+    box-shadow: 0 10px 20px rgb(73 74 76 / 19%), 0 6px 6px rgb(85 88 90 / 23%);
+    -webkit-transform: scale(1.009);
+    -ms-transform: scale(1.009);
+    transform: scale(1.009);
+}
+
+.btn-gray {
+    background-image: linear-gradient(90deg, #d1d1d1 0%, #cdcdcd 100%);
+    color: #002060;
+}
+
+.btn-gray:hover {
+    text-decoration: none;
+    color: #002060;
+    box-shadow: 0 10px 20px rgb(73 74 76 / 19%), 0 6px 6px rgb(85 88 90 / 23%);
+}

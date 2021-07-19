@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/assets/boostrap/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <link rel="stylesheet" href="/src/databook/databook.css">
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css">
+    <title>Design data book online</title>
+</head>
+
+<body>
+    <div class="nav-bar-wrap">
+        <div class="nav-bar">
+            <a href="/index.html" class="nav-bar-logo">
+                <img class="img-full-width" src="/assets/img/TT-Logo.png">
+            </a>
+            <div class="nav-bar-menu-wrap">
+                <div class="nav-bar-user hidden">
+
+                </div>
+                <div class="nav-bar-menu">
+                    <div class="menu-item user-wrap hidden">
+                        <div class="user-info-wrap">
+                            <div class="user-info">
+                                <img class="user-ava img-full-width" src="/assets/img/auth/img_avatar.png">
+                                <span class="user-name">User 1</span>
+                                <i class="user-menu-btn fas fa-caret-down"></i>
+                            </div>
+
+                            <div class="user-menu-wrap hidden">
+                                <div class="user-menu">
+                                    <div class="user-menu-item">Edit profile</div>
+                                    <div class="user-menu-item">Setting</div>
+                                    <a class="user-menu-item" style="text-decoration: none; color: #1858A8;"
+                                        href="/src/auth/login.html" onclick="logout()">Log out</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="menu-item login hidden">
+                        <a href="/src/auth/login.html" type="button" class="menu-btn btn btn-primary ">Login</a>
+                    </div>
+                    <!-- <div class="menu-item">
+                        <button type="button" class="menu-btn btn">Contact</button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="databook-page">
+        <div class="table-content-wrap">
+            <div class="table-content">
+                <div class="tab-header-wrap">
+                    <div class="tab-header active" tab-control="tab-one">
+                        タイトル・目次
+                    </div>
+                    <div class="tab-header" tab-control="tab-two">
+                        検索
+                    </div>
+                </div>
+                <div class="tab-body-wrap">
+                    <div class="tab-body active" id="tab-one">
+                        <div class="body-content-wrap">
+                            <ul class="lvl-0">
+                                <li><i class="content-icon fas fa-plus-circle"></i><a href="#1">1.
+                                        橋梁計画資料</a></li>
+                                <li><i class="content-icon fas fa-plus-circle"></i><a href="#2">2.
+                                        床板</a>
+                                    <ul class="lvl-1 collapsed">
+                                        <li><i class="content-icon fas fa-plus-circle"></i><a href="#2_1">2.1 床版の選定</a>
+                                            <ul class="lvl-2 collapsed">
+                                                <li><i class="content-icon"></i><a href="#2_1_1">(1)
+                                                        PC床版設計フローチャート</a></li>
+                                                <li><i class="content-icon"></i><a href="#2_1_2">(2)
+                                                        PC鋼材の許容応力度</a></li>
+                                                <li><i class="content-icon"></i><a href="#2_1_3">(3)
+                                                        プレストレス量の損失</a></li>
+                                                <li><i class="content-icon"></i><a href="#2_1_4">(4)
+                                                        コンクリートの許容応力度</a></li>
+                                                <li><i class="content-icon" class="far fa-hand-point-right"></i><a
+                                                        href="#2_1_5">(5)
+                                                        PC鋼線の諸元</a></li>
+                                                <li><i class="content-icon"></i><a href="#2_1_6">(6)
+                                                        プレグラウトタイプPC鋼材の諸元</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><i class="content-icon fas fa-plus-circle"></i><a href="#2_2">2.2
+                                                床版厚と活荷重設計曲げモーメント</a></li>
+                                        <li><i class="content-icon fas fa-plus-circle"></i><a href="#2_3">2.3 RC床版</a>
+                                        </li>
+                                        <li><i class="content-icon fas fa-plus-circle"></i><a href="#2_4">2.4
+                                                鋼・コンクリート合成床版</a></li>
+                                        <li><i class="content-icon fas fa-plus-circle"></i><a href="#2_5">2.5 PC床版</a>
+                                            <ul class="lvl-2 collapsed">
+                                                <li><i class="content-icon"></i><a href="#2_5_1">(1)
+                                                        PC床版設計フローチャート</a></li>
+                                                <li><i class="content-icon"></i><a href="#2_5_2">(2)
+                                                        PC鋼材の許容応力度</a></li>
+                                                <li><i class="content-icon"></i><a href="#2_5_3">(3)
+                                                        プレストレス量の損失</a></li>
+                                                <li><i class="content-icon"></i><a href="#2_5_4">(4)
+                                                        コンクリートの許容応力度</a></li>
+                                                <li><i class="content-icon"></i><a href="#2_5_5">(5)
+                                                        PC鋼線の諸元</a></li>
+                                                <li><i class="content-icon"></i><a href="#2_5_6">(6)
+                                                        プレグラウトタイプPC鋼材の諸元</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><i class="content-icon fas fa-plus-circle"></i><a href="#2_6">2.6 橋梁計画資料</a>
+                                        </li>
+                                        <li><i class="content-icon fas fa-plus-circle"></i><a href="#2_7">2.7 橋梁計画資料</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><i class="content-icon fas fa-plus-circle"></i><a href="#3">3. プレートガーター</a>
+                                </li>
+                                <li><i class="content-icon fas fa-plus-circle"></i><a href="#4">4. 連結</a></li>
+                                <li><i class="content-icon fas fa-plus-circle"></i><a href="#5">5. 輸送</a></li>
+                                <li><i class="content-icon fas fa-plus-circle"></i><a href="#6">6. 材料</a></li>
+                                <li><i class="content-icon fas fa-plus-circle"></i><a href="#7">7. 防食</a></li>
+                                <li><i class="content-icon fas fa-plus-circle"></i><a href="#8">8. 設計資料・応用力学公式</a>
+                                </li>
+                                <li><i class="content-icon fas fa-plus-circle"></i><a href="#9">9. 数学公式</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-body" id="tab-two">
+                        検索
+                    </div>
+                </div>
+            </div>
+            <div id="dragbar"></div>
+        </div>
+        <div class="databook-wrap">
+            <div id="databook-view"></div>
+        </div>
+    </div>
+    <div class="page-footer">
+        <div class="footer-social-icon">
+            <a href="mailto:someone@example.com"><i class="fas fa-envelope"
+                    style="color: rgb(37, 36, 36); font-size: 2.5rem;"></i></a>
+            <i class="fab fa-facebook-square" style="color: rgb(37, 36, 36); font-size: 2.5rem;"></i>
+            <i class="fab fa-youtube-square" style="color: rgb(37, 36, 36); font-size: 2.5rem;"></i>
+            <i class="fab fa-linkedin" style="color: rgb(37, 36, 36); font-size: 2.5rem;"></i>
+            <i class="fab fa-twitter-square" style="color: rgb(37, 36, 36); font-size: 2.5rem;"></i>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="/assets/js/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="/assets/boostrap/js/bootstrap.min.js"></script>
+    <script src="/assets/js/common.js"></script>
+    <script src="/assets/js/auth.js"></script>
+    <script src="/src/databook/databook.js"></script>
+</body>
+
+</html>
