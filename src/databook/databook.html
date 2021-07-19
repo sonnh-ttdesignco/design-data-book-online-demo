@@ -5,6 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="/assets/img/icontt.png" />
     <link rel="stylesheet" href="/assets/boostrap/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/common.css">
@@ -132,7 +133,18 @@
                         </div>
                     </div>
                     <div class="tab-body" id="tab-two">
-                        検索
+                        <div class="table-search p-3">
+                            <div class="input-group mb-3">
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fas fa-search"></i></span>
+                                </div>
+                                <input type="text" name="search-input" class="form-control search-input" value=""
+                                    required placeholder="Search something ...">
+                            </div>
+                            <div class="d-flex justify-content-center mt-3 login_container">
+                                <button type="button" name="button" class="btn search_btn">Search</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

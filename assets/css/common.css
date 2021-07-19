@@ -42,7 +42,7 @@ body {
 
 .nav-bar-menu-wrap {
     height: 100%;
-    width: calc(94% - 10rem);
+    width: calc(100% - 15rem);
     display: flex;
     flex-wrap: wrap;
 }

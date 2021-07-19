@@ -128,6 +128,23 @@ a.current {
     transform: rotate(180deg);
 }
 
+.table-search {
+    width: 100%;
+}
+
+.input-group-text {
+    background: #2b59c0 !important;
+    color: white !important;
+    border: 0 !important;
+    border-radius: 0.25rem 0 0 0.25rem !important;
+}
+
+.search_input:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+
+
 .databook-wrap {
     float: right;
     width: 70%;
