@@ -1,3 +1,11 @@
+body,
+html {
+    font-family: Calibri;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 100;
+}
+
 .category-page {
     padding-top: 10vh;
     display: flex;
@@ -23,12 +31,11 @@
     display: inline-block;
     height: auto;
     margin-bottom: 1rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .heading-subtitle {
     width: 100%;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 
 
@@ -72,7 +79,7 @@
 
 .text-reflect:before {
     content: attr(data-text);
-    top: 113px;
+    top: 109px;
     transform: scale(1, -1);
     backface-visibility: visible;
     z-index: 1;
@@ -81,7 +88,7 @@
 .text-reflect:after {
     content: '';
     display: block;
-    top: -8px;
+    top: -10px;
     left: 0;
     width: 100%;
     height: 41px;
