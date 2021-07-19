@@ -18,12 +18,21 @@ function loginFunction() {
         password: escapeOutput($(`#login-form input[name=password]`).val())
     }
     result = login(loginInfo);
-    Swal.fire({
-        icon: 'error',
-        title: 'Oops...',
-        text: result.msg,
-        footer: '<a href="#">Forgot your password?</a>'
-    })
+
+    if (result.status == "success") {
+        Swal.fire({
+            icon: 'success',
+            title: 'Congratulation!',
+            text: result.msg
+        })
+    } else {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...!',
+            text: result.msg,
+            footer: '<a href="#">Forgot your password?</a>'
+        })
+    }
 }
 
 $(function () {

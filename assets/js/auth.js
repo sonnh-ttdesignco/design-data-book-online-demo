@@ -55,20 +55,22 @@ function login(loginInfo) {
         }
 
         window.sessionStorage.setItem("auth", JSON.stringify(myAuth))
-        switch (backUrl) {
-            case 'dashboard':
-                window.location.href = "/src/dashboard/dashboard.html";
-                break;
-            case 'book-category':
-                window.location.href = "/src/databook/book-category.html";
-                break;
-            case 'databook':
-                window.location.href = "/src/databook/databook.html";
-                break;
-            default:
-                window.location.href = "/index.html";
-                break;
-        }
+        setTimeout(function () {
+            switch (backUrl) {
+                case 'dashboard':
+                    window.location.href = "/src/dashboard/dashboard.html";
+                    break;
+                case 'book-category':
+                    window.location.href = "/src/databook/book-category.html";
+                    break;
+                case 'databook':
+                    window.location.href = "/src/databook/databook.html";
+                    break;
+                default:
+                    window.location.href = "/index.html";
+                    break;
+            }
+        }, 2000);
         result = {
             status: "success",
             msg: "Login successfully!"
