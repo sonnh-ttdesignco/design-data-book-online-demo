@@ -121,11 +121,11 @@ a.current {
 
 .body-content-wrap li .content-icon {
     cursor: pointer;
-    transition: transform .3s ease-in-out;
+    /* transition: transform .3s ease-in-out; */
 }
 
 .body-content-wrap li .content-icon:hover {
-    transform: rotate(180deg);
+    /* transform: rotate(180deg); */
 }
 
 .table-search {
