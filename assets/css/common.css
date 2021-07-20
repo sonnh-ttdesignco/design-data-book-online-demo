@@ -110,7 +110,7 @@ body {
 }
 
 .user-menu-wrap {
-    z-index: 15;
+    z-index: 25;
     width: 7rem;
     display: block;
 }
