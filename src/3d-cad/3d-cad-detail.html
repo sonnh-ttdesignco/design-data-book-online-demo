@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="/assets/img/icontt.png" />
+    <link rel="stylesheet" href="/assets/boostrap/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <link rel="stylesheet" href="/src/3d-cad/3d-cad-detail.css">
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css">
+    <title>3D-CADライブラリー</title>
+</head>
+
+<body>
+    <div class="nav-bar-wrap">
+        <div class="nav-bar">
+            <!-- <a href="/index.html" class="nav-bar-logo">
+                <img class="img-full-width" src="/assets/img/TT-Logo.png">
+            </a> -->
+            <div class="heading-text">
+                <a class="text-reflect heading-reflect" data-text="3D-CADライブラリー">3D-CADライブラリー</a>
+            </div>
+            <div class="nav-bar-menu-wrap">
+                <div class="nav-bar-user hidden">
+
+                </div>
+                <div class="nav-bar-menu">
+                    <div class="menu-item user-wrap hidden">
+                        <div class="user-info-wrap">
+                            <div class="user-info">
+                                <img class="user-ava img-full-width" src="/assets/img/auth/img_avatar.png">
+                                <span class="user-name">User 1</span>
+                                <i class="user-menu-btn fas fa-caret-down"></i>
+                            </div>
+
+                            <div class="user-menu-wrap hidden">
+                                <div class="user-menu">
+                                    <div class="user-menu-item">Edit profile</div>
+                                    <div class="user-menu-item">Setting</div>
+                                    <a class="user-menu-item" style="text-decoration: none; color: #1858A8;"
+                                        href="/src/auth/login.html" onclick="logout()">Log out</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="menu-item login hidden">
+                        <a href="/src/auth/login.html" type="button" class="menu-btn btn">Login</a>
+                    </div>
+                    <!-- <div class="menu-item">
+                        <button type="button" class="menu-btn btn">Contact</button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="databook-page">
+        <div class="table-content-wrap">
+            <div class="table-content">
+                <div class="content-header">
+                    フィルター検索
+                </div>
+                <div class="content-body">
+                    <div class="body-wrap">
+                        <div class="body-item">
+                            <span class="item-text">ブランド名</span>
+                            <i class="item-icon fas fa-chevron-right"></i>
+                        </div>
+                        <div class="body-item">
+                            <span class="item-text">カテゴリ</span>
+                            <i class="item-icon fas fa-chevron-right"></i>
+                        </div>
+                        <div class="body-item">
+                            <span class="item-text">ファイルタイプ</span>
+                            <i class="item-icon fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-footer">
+                    <a href="/src/dashboard/dashboard.html" class="footer"><i class="fas fa-arrow-left"></i>&nbsp;Back
+                        to dashboard</a>
+                </div>
+            </div>
+            <div id="dragbar"></div>
+        </div>
+        <div class="databook-wrap">
+            <div class="databook-heading">
+                <div class="heading-title">
+                    3D‐CADデータの一覧
+                </div>
+            </div>
+            <div class="databook-body">
+                <div class="item-wrap">
+                    <div class="item-body">
+                        <img class="img-80-width" src="/assets/img/cad/detail/Picture5.png">
+                        <div class="item-text">海洋重機関連</div>
+                    </div>
+                    <div class="item-body">
+                        <img class="img-80-width" src="/assets/img/cad/detail/Picture6.png">
+                        <div class="item-text">交通規制関連</div>
+                    </div>
+                    <div class="item-body">
+                        <img class="img-80-width" src="/assets/img/cad/detail/Picture7.png">
+                        <div class="item-text">車両関連</div>
+                    </div>
+                    <div class="item-body">
+                        <img class="img-80-width" src="/assets/img/cad/detail/Picture8.png">
+                        <div class="item-text">足場機材</div>
+                    </div>
+                    <div class="item-body">
+                        <img class="img-80-width" src="/assets/img/cad/detail/Picture9.jpg">
+                        <div class="item-text">クレーン</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="page-footer">
+        <div class="footer-social-icon">
+            <a href="mailto:someone@example.com"><i class="fas fa-envelope"
+                    style="color: rgb(37, 36, 36); font-size: 2.5rem;"></i></a>
+            <i class="fab fa-facebook-square" style="color: rgb(37, 36, 36); font-size: 2.5rem;"></i>
+            <i class="fab fa-youtube-square" style="color: rgb(37, 36, 36); font-size: 2.5rem;"></i>
+            <i class="fab fa-linkedin" style="color: rgb(37, 36, 36); font-size: 2.5rem;"></i>
+            <i class="fab fa-twitter-square" style="color: rgb(37, 36, 36); font-size: 2.5rem;"></i>
+        </div>
+    </div> -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="/assets/js/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="/assets/boostrap/js/bootstrap.min.js"></script>
+    <script src="/assets/js/common.js"></script>
+    <script src="/assets/js/auth.js"></script>
+    <script src="/src/databook/databook.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,233 @@
+.heading-text {
+    text-decoration: none;
+    width: 35rem;
+    height: 100%;
+    margin-left: 2rem;
+    font-family: Calibri;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 100;
+    overflow: hidden;
+}
+
+.nav-bar-menu-wrap {
+    width: calc(100% - 37rem);
+}
+
+.heading-reflect {
+    display: inline-block;
+    width: 100%;
+    font-size: 2.5rem;
+    font-weight: 100;
+    /* text-transform: uppercase; */
+    letter-spacing: 3px;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    line-height: 1.2;
+}
+
+.text-reflect,
+.text-reflect:before,
+.text-reflect span {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.text-reflect,
+.text-reflect:before,
+.text-reflect:after {
+    position: relative;
+}
+
+.text-reflect {
+    top: -35px;
+    height: 87px;
+}
+
+.text-reflect.above {
+    top: -40px;
+    z-index: 4;
+}
+
+.text-reflect:before {
+    content: attr(data-text);
+    top: 78px;
+    transform: scale(1, -1);
+    backface-visibility: visible;
+    z-index: 1;
+}
+
+.text-reflect:after {
+    content: '';
+    display: block;
+    top: -8px;
+    left: 0;
+    width: 100%;
+    height: 28px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, .75) 0%, rgba(255, 255, 255, 1) 50%);
+    z-index: 2;
+}
+
+#dragbar {
+    background-color: black;
+    height: 100%;
+    float: right;
+    width: 2px;
+    cursor: col-resize;
+}
+
+.databook-page {
+    padding-top: 10vh;
+    display: flex;
+}
+
+.table-content-wrap {
+    width: 30%;
+    height: 90vh;
+    float: left;
+    overflow: hidden;
+    display: flex;
+    -webkit-box-shadow: 3px 0px 6px rgb(15 85 170 / 16%), 3px 0px 6px rgb(15 85 170 / 23%);
+    box-shadow: 3px 0px 6px rgb(15 85 170 / 16%), 3px 0px 6px rgb(15 85 170 / 23%);
+}
+
+.table-content {
+    width: 100%;
+    margin: 1rem;
+}
+
+.content-header {
+    width: 100%;
+    height: 2rem;
+}
+
+.content-body {
+    height: calc(100% - 4rem);
+    width: 100%;
+}
+
+.content-body .body-wrap {
+    height: fit-content;
+    width: 100%;
+    padding: .5rem;
+    border: 2px solid #bfbbbb;
+    background-color: #f8fdff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.content-body .body-item {
+    height: 2.5rem;
+    width: 20rem;
+    padding: .5rem;
+    margin: 0.425rem;
+    border: 1px solid #bfbbbb;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px rgb(39, 38, 38);
+}
+
+.content-body .body-item:hover {
+    transform: scale(1.001);
+    box-shadow: 1px 2px 2px rgb(39, 38, 38);
+}
+
+.content-body .item-text {
+    width: 90%;
+}
+
+.content-body .item-icon {
+    width: 10%;
+}
+
+.content-footer {
+    height: 2rem;
+    width: 100%;
+    position: relative;
+    bottom: 0rem;
+    display: flex;
+    align-items: center;
+}
+
+.content-footer a {
+    color: #0056b3;
+}
+
+.content-footer a:hover {
+    text-decoration: none;
+    color: #1e6bbd;
+}
+
+.databook-wrap {
+    float: right;
+    width: 70%;
+    height: 90vh;
+    padding: 1rem;
+    padding-right: 17px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.databook-heading {
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.heading-title {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.databook-body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    box-sizing: content-box;
+    padding-right: calc(1rem + 17px);
+    display: flex;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+.databook-body .item-wrap {
+    width: calc(100% - 2rem);
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.databook-body .item-body {
+    margin: 0.5rem;
+    width: 30%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.databook-body .item-body img {
+    width: 100%;
+}
+
+.databook-body .item-body img:hover {
+    transform: scale(1.03);
+}
+
+.databook-body .item-text {
+    width: 100%;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+}
