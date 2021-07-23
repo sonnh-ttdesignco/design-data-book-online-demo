@@ -19,5 +19,5 @@ function resizeBar() {
 
 
 $(function () {
-    resizeBar();
+    // resizeBar();
 })
