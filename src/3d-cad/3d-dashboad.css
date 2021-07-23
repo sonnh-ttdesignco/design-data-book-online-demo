@@ -67,8 +67,3 @@ html {
     display: flex;
     justify-content: center;
 }
-
-.body-item:hover {
-    transition: .5s;
-    transform: scale(1.1);
-}

@@ -66,7 +66,7 @@
     top: -8px;
     left: 0;
     width: 100%;
-    height: 28px;
+    height: 63px;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, .75) 0%, rgba(255, 255, 255, 1) 50%);
     z-index: 2;
 }
@@ -107,11 +107,13 @@
 .content-body {
     height: calc(100% - 4rem);
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .content-body .body-wrap {
     height: fit-content;
-    width: 100%;
+    width: 25rem;
     padding: .5rem;
     border: 2px solid #bfbbbb;
     background-color: #f8fdff;
@@ -231,3 +233,26 @@
     display: flex;
     justify-content: center;
 }
+
+/*  XX-Large devices (larger desktops) */
+/* No media query since the xxl breakpoint has no upper bound on its width */
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+    .content-body .body-wrap {
+        width: 20rem;
+    }
+
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {}
