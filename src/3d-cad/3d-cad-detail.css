@@ -178,7 +178,20 @@
     position: relative;
 }
 
+.databook {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    box-sizing: content-box;
+    padding-right: calc(1rem + 17px);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .databook-heading {
+    margin-top: 4vh;
     height: 3rem;
     width: 100%;
     display: flex;
@@ -191,15 +204,8 @@
 }
 
 .databook-body {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    overflow-y: scroll;
-    box-sizing: content-box;
-    padding-right: calc(1rem + 17px);
     display: flex;
     justify-content: center;
-    overflow-y: scroll;
 }
 
 .databook-body .item-wrap {
@@ -228,6 +234,8 @@
 }
 
 .databook-body .item-text {
+    position: relative;
+    bottom: 3rem;
     width: 100%;
     font-size: 1.25rem;
     display: flex;
