@@ -186,12 +186,10 @@
     box-sizing: content-box;
     padding-right: calc(1rem + 17px);
     display: flex;
-    justify-content: center;
     flex-direction: column;
 }
 
 .databook-heading {
-    margin-top: 4vh;
     height: 3rem;
     width: 100%;
     display: flex;
