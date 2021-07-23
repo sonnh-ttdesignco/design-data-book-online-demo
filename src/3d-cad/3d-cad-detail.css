@@ -169,7 +169,7 @@
 
 .databook-wrap {
     float: right;
-    width: 70%;
+    width: calc(100% - 27rem);
     height: 90vh;
     padding: 1rem;
     padding-right: 17px;
@@ -235,7 +235,8 @@
 
 .databook-body .item-text {
     position: relative;
-    bottom: 3rem;
+    bottom: 2.5rem;
+    left: -0.5rem;
     width: 100%;
     font-size: 1.25rem;
     display: flex;
@@ -253,6 +254,12 @@
 
     .content-body .body-wrap {
         width: 20rem;
+    }
+
+    .databook-body .item-text {
+        position: relative;
+        bottom: 1.5rem;
+        left: -0.5rem;
     }
 
 }
