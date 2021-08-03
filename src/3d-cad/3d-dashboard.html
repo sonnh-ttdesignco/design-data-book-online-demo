@@ -6,23 +6,31 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" type="image/x-icon" href="/assets/img/icontt.png" />
-    <link rel="stylesheet" href="/assets/boostrap/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/boostrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/css/common.css">
     <link rel="stylesheet" href="/src/3d-cad/3d-dashboad.css">
     <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./3d-cad.css">
     <title>3D-CADライブラリー</title>
 </head>
 
 <body>
     <div class="nav-bar-wrap">
         <div class="nav-bar">
-            <a href="/index.html" class="nav-bar-logo">
-                <img class="img-full-width" src="/assets/img/Logo.png">
-            </a>
-            <div class="nav-bar-menu-wrap">
-                <div class="nav-bar-user hidden">
+            <div class="logo-with-ribbon">
 
+                <a href="/index.html" class="nav-bar-logo">
+                    <img class="img-full-width-1" src="./img/logo.png">
+                </a>
+                <p class="ribbon">EXPLORE</p>
+                <p class="ribbon">BUY 3D MODELS</p>
+                <p class="ribbon">FOR BUSINESS</p>
+            </div>
+
+            <div class="nav-bar-menu-wrap">
+                <input class="form-control" type="text" placeholder="Search 3D model here">
+                <div class="shoppint-cart">
+                    <i class="fas fa-shopping-cart fa-lg"></i>
                 </div>
                 <div class="nav-bar-menu">
                     <div class="menu-item user-wrap hidden">
@@ -37,8 +45,7 @@
                                 <div class="user-menu">
                                     <div class="user-menu-item">Edit profile</div>
                                     <div class="user-menu-item">Setting</div>
-                                    <a class="user-menu-item" style="text-decoration: none; color: #1858A8;"
-                                        href="/src/auth/login.html" onclick="logout()">Log out</a>
+                                    <a class="user-menu-item" style="text-decoration: none; color: #1858A8;" href="/src/auth/login.html" onclick="logout()">Log out</a>
                                 </div>
                             </div>
                         </div>
@@ -56,7 +63,424 @@
     </div>
 
     <div class="cad-page">
-        <div class="cad-heading">
+        <div class="header-banner">
+            <p class="title-page-3d">3D-CADライブラリー</p>
+        </div>
+        <div class="full-content">
+            <div class="full-content-left">
+                <div class="header-left-content">
+                    <p>POPULAR LIBRARY 3D MODELS</p>
+                    <div class="view-all">
+                        <p>View all</p>
+                        <i style="color: #1c88bb;" class="fas fa-chevron-right fa-sm"></i>
+                    </div>
+
+                </div>
+                <div class="content-left-models">
+                    <div class="model-job-all" onclick="LoadView()" data-toggle="modal" data-target="#model-crane">
+                        <div class="model-img">
+                            <img src="./img/content/1.jpg">
+                        </div>
+                        <div class="model-text">
+                            <div class="avatar-name">
+                                <img src="./img/content/avata.jpg">
+                                <p>Terrian Crane Model</p>
+                            </div>
+                            <div class="rating-model">
+                                <i style="color: rgb(167, 167, 167);" class="far fa-eye fa-sm"></i>
+                                <p>1.8k</p>
+                                <i style="color: rgb(167, 167, 167);"" class=" fas fa-star fa-sm"></i>
+                                <p>55</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model-job-all" onclick="LoadView()" data-toggle="modal" data-target="#model-crane">
+                        <div class="model-img">
+                            <img src="./img/content/2.jpg">
+                        </div>
+                        <div class="model-text">
+                            <div class="avatar-name">
+                                <img src="./img/content/avata.jpg">
+                                <p>Rough Crane</p>
+                            </div>
+                            <div class="rating-model">
+                                <i style="color: rgb(167, 167, 167);" class="far fa-eye fa-sm"></i>
+                                <p>1.8k</p>
+                                <i style="color: rgb(167, 167, 167);"" class=" fas fa-star fa-sm"></i>
+                                <p>55</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model-job-all" onclick="LoadView()" data-toggle="modal" data-target="#model-crane">
+                        <div class="model-img">
+                            <img src="./img/content/3.jpg">
+                        </div>
+                        <div class="model-text">
+                            <div class="avatar-name">
+                                <img src="./img/content/avata.jpg">
+                                <p>Construction Site</p>
+                            </div>
+                            <div class="rating-model">
+                                <i style="color: rgb(167, 167, 167);" class="far fa-eye fa-sm"></i>
+                                <p>1.8k</p>
+                                <i style="color: rgb(167, 167, 167);"" class=" fas fa-star fa-sm"></i>
+                                <p>55</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model-job-all" onclick="LoadView()" data-toggle="modal" data-target="#model-crane">
+                        <div class="model-img">
+                            <img src="./img/content/4.jpg">
+                        </div>
+                        <div class="model-text">
+                            <div class="avatar-name">
+                                <img src="./img/content/avata.jpg">
+                                <p>Tower Crane </p>
+                            </div>
+                            <div class="rating-model">
+                                <i style="color: rgb(167, 167, 167);" class="far fa-eye fa-sm"></i>
+                                <p>1.8k</p>
+                                <i style="color: rgb(167, 167, 167);"" class=" fas fa-star fa-sm"></i>
+                                <p>55</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model-job-all" onclick="LoadView()" data-toggle="modal" data-target="#model-crane">
+                        <div class="model-img">
+                            <img src="./img/content/6.jpg">
+                        </div>
+                        <div class="model-text">
+                            <div class="avatar-name">
+                                <img src="./img/content/avata.jpg">
+                                <p>Terrian Crane Model</p>
+                            </div>
+                            <div class="rating-model">
+                                <i style="color: rgb(167, 167, 167);" class="far fa-eye fa-sm"></i>
+                                <p>1.8k</p>
+                                <i style="color: rgb(167, 167, 167);"" class=" fas fa-star fa-sm"></i>
+                                <p>55</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model-job-all" onclick="LoadView()" data-toggle="modal" data-target="#model-crane">
+                        <div class="model-img">
+                            <img src="./img/content/2.jpg">
+                        </div>
+                        <div class="model-text">
+                            <div class="avatar-name">
+                                <img src="./img/content/avata.jpg">
+                                <p>Tower Crane </p>
+                            </div>
+                            <div class="rating-model">
+                                <i style="color: rgb(167, 167, 167);" class="far fa-eye fa-sm"></i>
+                                <p>1.8k</p>
+                                <i style="color: rgb(167, 167, 167);"" class=" fas fa-star fa-sm"></i>
+                                <p>55</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model-job-all" onclick="LoadView()" data-toggle="modal" data-target="#model-crane">
+                        <div class="model-img">
+                            <img src="./img/content/7.jpg">
+                        </div>
+                        <div class="model-text">
+                            <div class="avatar-name">
+                                <img src="./img/content/avata.jpg">
+                                <p>Rough Crane Model</p>
+                            </div>
+                            <div class="rating-model">
+                                <i style="color: rgb(167, 167, 167);" class="far fa-eye fa-sm"></i>
+                                <p>1.8k</p>
+                                <i style="color: rgb(167, 167, 167);"" class=" fas fa-star fa-sm"></i>
+                                <p>55</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model-job-all" onclick="LoadView()" data-toggle="modal" data-target="#model-crane">
+                        <div class="model-img">
+                            <img src="./img/content/8.jpg">
+                        </div>
+                        <div class="model-text">
+                            <div class="avatar-name">
+                                <img src="./img/content/avata.jpg">
+                                <p>Scaffolding Model</p>
+                            </div>
+                            <div class="rating-model">
+                                <i style="color: rgb(167, 167, 167);" class="far fa-eye fa-sm"></i>
+                                <p>1.8k</p>
+                                <i style="color: rgb(167, 167, 167);"" class=" fas fa-star fa-sm"></i>
+                                <p>55</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model-job-all" onclick="LoadView()" data-toggle="modal" data-target="#model-crane">
+                        <div class="model-img">
+                            <img src="./img/content/9.jpg">
+                        </div>
+                        <div class="model-text">
+                            <div class="avatar-name">
+                                <img src="./img/content/avata.jpg">
+                                <p>Scaffolding Model</p>
+                            </div>
+                            <div class="rating-model">
+                                <i style="color: rgb(167, 167, 167);" class="far fa-eye fa-sm"></i>
+                                <p>1.8k</p>
+                                <i style="color: rgb(167, 167, 167);"" class=" fas fa-star fa-sm"></i>
+                                <p>55</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model-job-all" onclick="LoadView()" data-toggle="modal" data-target="#model-crane">
+                        <div class="model-img">
+                            <img src="./img/content/10.jpg">
+                        </div>
+                        <div class="model-text">
+                            <div class="avatar-name">
+                                <img src="./img/content/avata.jpg">
+                                <p>Pipe Connection</p>
+                            </div>
+                            <div class="rating-model">
+                                <i style="color: rgb(167, 167, 167);" class="far fa-eye fa-sm"></i>
+                                <p>1.8k</p>
+                                <i style="color: rgb(167, 167, 167);"" class=" fas fa-star fa-sm"></i>
+                                <p>55</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model-job-all" onclick="LoadView()" data-toggle="modal" data-target="#model-crane">
+                        <div class="model-img">
+                            <img src="./img/content/11.jpg">
+                        </div>
+                        <div class="model-text">
+                            <div class="avatar-name">
+                                <img src="./img/content/avata.jpg">
+                                <p>Construction site</p>
+                            </div>
+                            <div class="rating-model">
+                                <i style="color: rgb(167, 167, 167);" class="far fa-eye fa-sm"></i>
+                                <p>1.8k</p>
+                                <i style="color: rgb(167, 167, 167);"" class=" fas fa-star fa-sm"></i>
+                                <p>55</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model-job-all" onclick="LoadView()" data-toggle="modal" data-target="#model-crane">
+                        <div class="model-img">
+                            <img src="./img/content/12.jpg">
+                        </div>
+                        <div class="model-text">
+                            <div class="avatar-name">
+                                <img src="./img/content/avata.jpg">
+                                <p>Window</p>
+                            </div>
+                            <div class="rating-model">
+                                <i style="color: rgb(167, 167, 167);" class="far fa-eye fa-sm"></i>
+                                <p>1.8k</p>
+                                <i style="color: rgb(167, 167, 167);"" class=" fas fa-star fa-sm"></i>
+                                <p>55</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model-job-all" onclick="LoadView()" data-toggle="modal" data-target="#model-crane">
+                        <div class="model-img">
+                            <img src="./img/content/13.jpg">
+                        </div>
+                        <div class="model-text">
+                            <div class="avatar-name">
+                                <img src="./img/content/avata.jpg">
+                                <p>Window</p>
+                            </div>
+                            <div class="rating-model">
+                                <i style="color: rgb(167, 167, 167);" class="far fa-eye fa-sm"></i>
+                                <p>1.8k</p>
+                                <i style="color: rgb(167, 167, 167);"" class=" fas fa-star fa-sm"></i>
+                                <p>55</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model-job-all" onclick="LoadView()" data-toggle="modal" data-target="#model-crane">
+                        <div class="model-img">
+                            <img src="./img/content/6.jpg">
+                        </div>
+                        <div class="model-text">
+                            <div class="avatar-name">
+                                <img src="./img/content/avata.jpg">
+                                <p>Rough Crane</p>
+                            </div>
+                            <div class="rating-model">
+                                <i style="color: rgb(167, 167, 167);" class="far fa-eye fa-sm"></i>
+                                <p>1.8k</p>
+                                <i style="color: rgb(167, 167, 167);"" class=" fas fa-star fa-sm"></i>
+                                <p>55</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model-job-all" onclick="LoadView()" data-toggle="modal" data-target="#model-crane">
+                        <div class="model-img">
+                            <img src="./img/content/5.jpg">
+                        </div>
+                        <div class="model-text">
+                            <div class="avatar-name">
+                                <img src="./img/content/avata.jpg">
+                                <p>Tower Crane</p>
+                            </div>
+                            <div class="rating-model">
+                                <i style="color: rgb(167, 167, 167);" class="far fa-eye fa-sm"></i>
+                                <p>1.8k</p>
+                                <i style="color: rgb(167, 167, 167);" class=" fas fa-star fa-sm"></i>
+                                <p>55</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="full-content-right">
+                <div class="related-tag">
+                    <h5 class="sidebar-title">Related tags</h5>
+                    <div class="tag-list">
+                        <div class="tag-item">
+                            <p>site</p>
+                        </div>
+                        <div class="tag-item">
+                            <p>iupiu</p>
+                        </div>
+                        <div class="tag-item">
+                            <p>indiana</p>
+                        </div>
+                        <div class="tag-item">
+                            <p>university</p>
+                        </div>
+                        <div class="tag-item">
+                            <p>book</p>
+                        </div>
+                        <div class="tag-item">
+                            <p>mask</p>
+                        </div>
+                        <div class="tag-item">
+                            <p>creaform</p>
+                        </div>
+                        <div class="tag-item">
+                            <p>injury</p>
+                        </div>
+                        <div class="tag-item">
+                            <p>3d</p>
+                        </div>
+                        <div class="tag-item">
+                            <p>edam</p>
+                        </div>
+                        <div class="tag-item">
+                            <p>muscles</p>
+                        </div>
+                        <div class="tag-item">
+                            <p>african</p>
+                        </div>
+                        <div class="tag-item">
+                            <p>inovation</p>
+                        </div>
+                        <div class="tag-item">
+                            <p>labs</p>
+                        </div>
+                        <div class="tag-item">
+                            <p>school</p>
+                        </div>
+                        <div class="tag-item">
+                            <p>creaform</p>
+                        </div>
+                        <div class="tag-item">
+                            <p>injury</p>
+                        </div>
+                        <div class="tag-item">
+                            <p>3d</p>
+                        </div>
+                        <div class="tag-item">
+                            <p>edam</p>
+                        </div>
+                        <div class="tag-item">
+                            <p>muscles</p>
+                        </div>
+                        <div class="tag-item">
+                            <p>book</p>
+                        </div>
+                        <div class="tag-item">
+                            <p>mask</p>
+                        </div>
+                        <div class="tag-item">
+                            <p>creaform</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="store-box">
+                    <p> Buy Library 3D models</p>
+                </div>
+                <div class="related-tag">
+                    <h5 class="sidebar-title">Contributors</h5>
+                    <div class="contributor-all">
+                        <div class="avatar-name">
+                            <img src="./img/content/hoan.jpg">
+                            <p>Pham Cong Hoan</p>
+                        </div>
+                        <div class="folow-btn">
+                            <p>+</p>
+                            <P>FOLLOW</P>
+                        </div>
+                    </div>
+                    <div class="contributor-all">
+                        <div class="avatar-name">
+                            <img src="./img/content/avata.jpg">
+                            <p>Pham Nhat Vuong</p>
+                        </div>
+                        <div class="folow-btn">
+                            <p>+</p>
+                            <P>FOLLOW</P>
+                        </div>
+                    </div>
+                    <div class="contributor-all">
+                        <div class="avatar-name">
+                            <img src="./img/content/avata.jpg">
+                            <p>Pham Ngu Lao</p>
+                        </div>
+                        <div class="folow-btn">
+                            <p>+</p>
+                            <P>FOLLOW</P>
+                        </div>
+                    </div>
+                    <div class="contributor-all">
+                        <div class="avatar-name">
+                            <img src="./img/content/avata.jpg">
+                            <p>Pham Bang Bang</p>
+                        </div>
+                        <div class="folow-btn">
+                            <p>+</p>
+                            <P>FOLLOW</P>
+                        </div>
+                    </div>
+                    <div class="contributor-all">
+                        <div class="avatar-name">
+                            <img src="./img/content/avata.jpg">
+                            <p>Cristiano Ronaldo</p>
+                        </div>
+                        <div class="folow-btn">
+                            <p>+</p>
+                            <P>FOLLOW</P>
+                        </div>
+                    </div>
+                    <div class="contributor-all">
+                        <div class="avatar-name">
+                            <img src="./img/content/avata.jpg">
+                            <p>Messi</p>
+                        </div>
+                        <div class="folow-btn">
+                            <p>+</p>
+                            <P>FOLLOW</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="cad-heading">
             <div class="heading-title">3D-CADライブラリー</div>
             <div class="heading-subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
             <a href="/src/3d-cad/3d-cad-detail.html" class="heading-btn btn btn-primary">一覧へ</a>
@@ -76,9 +500,85 @@
                     <img class="img-full-width" src="/assets/img/cad/Picture4.png">
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade " id="model-crane" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Terrian Crane Model</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="view-model-3d">
+                        <p id="loading-model">3D MODEL IS LOADING...</p>
+                    </div>
+                    <div class="payment-method">
+                        <div class="payment-border">
+                            <div class="money-cart">
+                                <p class="money">$ FREE</p>
+                                <div class="infor-detail">
+                                    <i class="fas fa-lock fa-sm"></i>
+                                    <p>Secure payment</p>
+                                </div>
+                                <div class="infor-detail">
+                                    <i class="fas fa-envelope fa-sm"></i>
+                                    <p>Support from sellers</p>
+                                </div>
+                                <div class="infor-detail">
+                                    <i class="fas fa-history fa-sm"></i>
+                                    <p>Access to future versions</p>
+                                </div>
+                                <div class="money-add-cart">
+                                    <p>ADD TO CART</p>
+                                </div>
+                                <div class="c-payment-solutions">
+                                    <div class="c-payment-solutions__image --card-visa"></div>
+                                    <div class="c-payment-solutions__image --card-mastercard"></div>
+                                    <div class="c-payment-solutions__image --card-amex"></div>
+                                    <span class="via">via</span>
+
+                                    <div class="c-payment-solutions__image --paypal"></div>
+                                </div>
+                            </div>
+                            <div class="inspect-model">
+                                <div class="inspect-model-text">
+                                    <p>INSPECT THE 3D MODEL</p>
+                                </div>
+                                <div class="inspect-review">
+                                    Review
+                                </div>
+                                <div class="inspect-review">
+                                    Description
+                                </div>
+                                <div class="inspect-review">
+                                    Format
+                                </div>
+                                <div class="inspect-review">
+                                    Download
+                                </div>
+                                <div class="inspect-review">
+                                    Version
+                                </div>
+                                <div class="inspect-review">
+                                    File Size
+                                </div>
+                                <div class="inspect-review">
+                                    Date
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
     <!-- <div class="page-footer">
         <div class="footer-social-icon">
             <a href="mailto:someone@example.com"><i class="fas fa-envelope"
@@ -97,6 +597,8 @@
     <script src="/assets/js/common.js"></script>
     <script src="/assets/js/auth.js"></script>
     <script src="/src/3d-cad/3d-dashboard.js"></script>
+    <script type="module" src="./model/load.js"></script>
+
 </body>
 
 </html>
