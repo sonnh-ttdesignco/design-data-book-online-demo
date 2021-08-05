@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="/assets/img/icontt.png" />
+    <link rel="stylesheet" href="/assets/boostrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <link rel="stylesheet" href="/src/3d-cad/3d-dashboad.css">
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./3d-cad-cate.css">
+    <title>3D-CADライブラリー</title>
+</head>
+
+<body>
+    <div class="nav-bar-wrap">
+        <div class="nav-bar">
+            <div class="logo-with-ribbon">
+
+                <a href="/index.html" class="nav-bar-logo">
+                    <img class="img-full-width-1" src="/assets/img/Logo.png">
+                </a>
+                <!-- 
+                <p class="ribbon">EXPLORE</p>
+                <p class="ribbon">BUY 3D MODELS</p>
+                <p class="ribbon">FOR BUSINESS</p> -->
+            </div>
+
+            <div class="nav-bar-menu-wrap">
+                <!-- <input class="form-control" type="text" placeholder="3Dモデル検索"> -->
+                <!-- <div class="shoppint-cart">
+                    <i class="fas fa-shopping-cart fa-lg"></i>
+                </div> -->
+                <div class="nav-bar-menu">
+                    <div class="menu-item user-wrap hidden">
+                        <div class="user-info-wrap">
+                            <div class="user-info">
+                                <img class="user-ava img-full-width" src="/assets/img/auth/img_avatar.png">
+                                <span class="user-name">User 1</span>
+                                <i class="user-menu-btn fas fa-caret-down"></i>
+                            </div>
+
+                            <div class="user-menu-wrap hidden">
+                                <div class="user-menu">
+                                    <div class="user-menu-item">Edit profile</div>
+                                    <div class="user-menu-item">Setting</div>
+                                    <a class="user-menu-item" style="text-decoration: none; color: #1858A8;" href="/src/auth/login.html" onclick="logout()">Log out</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="menu-item login hidden">
+                        <a href="/src/auth/login.html" type="button" class="menu-btn btn">Login</a>
+                    </div>
+                    <!-- <div class="menu-item">
+                        <button type="button" class="menu-btn btn">Contact</button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cad-page">
+        <div class="header-banner">
+            <p class="title-page-3d ">3D-CADライブラリー</p>
+            <p class="discription">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Officia placeat, nam accusamus sunt maxime nostrum, esse et dicta quod
+                numquam non similique nemo dolorum beatae adipisci, consequatur
+                exercitationem odio aliquam</p>
+        </div>
+        <div class="full-content">
+            <div class="full-content-right">
+                <div class="related-tag gray">
+                    <h5 class="sidebar-title">フィルター検索</h5>
+                    <div class="filter-list">
+                        <div class="filer-type">
+                            <p>ブランド名</p>
+                            <i style="color: #1858A8;" class="fas fa-chevron-right fa-sm"></i>
+                        </div>
+                        <div class="filer-type">
+                            <p>カテゴリ</p>
+                            <i style="color: #1858A8;" class="fas fa-chevron-right fa-sm"></i>
+                        </div>
+                        <div class="filer-type">
+                            <p>ファイルタイプ</p>
+                            <i style="color: #1858A8;" class="fas fa-chevron-right fa-sm"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="full-content-left">
+                <div class="header-left-content">
+                    <p class="tile-cate">3D‐CADデータの一覧</p>
+                    <!-- <div class="view-all">
+                        <p>View all</p>
+                        <i style="color: #1c88bb;" class="fas fa-chevron-right fa-sm"></i>
+                    </div> -->
+
+                </div>
+                <div class="content-left-models">
+                    <div class="category-model">
+                        <img onclick="changeUrl()" src="./img/content/cate/1.png">
+                        <a href="./3d-dashboard.html" class="text-hover">海洋重機関連</a>
+                    </div>
+                    <div class="category-model">
+                        <img onclick="changeUrl()" src="./img/content/cate/2.png">
+                        <a href="./3d-dashboard.html" class="text-hover">交通規制関連</a>
+                    </div>
+                    <div class="category-model">
+                        <img onclick="changeUrl()" src="./img/content/cate/3.png">
+                        <a href="./3d-dashboard.html" class="text-hover">車両関連</a>
+                    </div>
+                    <div class="category-model">
+                        <img onclick="changeUrl()" src="./img/content/cate/4.png">
+                        <a href="./3d-dashboard.html" class="text-hover">足場機材</a>
+                    </div>
+                    <div class="category-model">
+                        <img onclick="changeUrl()" src="./img/content/cate/5.png">
+                        <a href="./3d-dashboard.html" class="text-hover">クレーン</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade " id="model-crane" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">オールテレーンクレーン 80T</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="view-model-3d">
+                        <p id="loading-model">3Dモデルが読み込まれています...</p>
+                    </div>
+                    <div class="payment-method">
+                        <div class="payment-border">
+                            <div class="money-cart">
+                                <!-- <p class="money">$ FREE</p>
+                                <div class="infor-detail">
+                                    <i class="fas fa-lock fa-sm"></i>
+                                    <p>Secure payment</p>
+                                </div>
+                                <div class="infor-detail">
+                                    <i class="fas fa-envelope fa-sm"></i>
+                                    <p>Support from sellers</p>
+                                </div>
+                                <div class="infor-detail">
+                                    <i class="fas fa-history fa-sm"></i>
+                                    <p>Access to future versions</p>
+                                </div> -->
+                                <div class="money-add-cart">
+                                    <p>カートに入れる</p>
+                                </div>
+                                <div class="c-payment-solutions">
+                                    <div class="c-payment-solutions__image --card-visa"></div>
+                                    <div class="c-payment-solutions__image --card-mastercard"></div>
+                                    <div class="c-payment-solutions__image --card-amex"></div>
+                                    <span class="via">via</span>
+
+                                    <div class="c-payment-solutions__image --paypal"></div>
+                                </div>
+                            </div>
+                            <div class="inspect-model">
+                                <!-- <div class="inspect-model-text">
+                                    <p>INSPECT THE 3D MODEL</p>
+                                </div>
+                                <div class="inspect-review">
+                                    Review
+                                </div>
+                                <div class="inspect-review">
+                                    Description
+                                </div>
+                                <div class="inspect-review">
+                                    Format
+                                </div>
+                                <div class="inspect-review">
+                                    Download
+                                </div>
+                                <div class="inspect-review">
+                                    Version
+                                </div>
+                                <div class="inspect-review">
+                                    File Size
+                                </div>
+                                <div class="inspect-review">
+                                    Date
+                                </div> -->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- <div class="page-footer">
+        <div class="footer-social-icon">
+            <a href="mailto:someone@example.com"><i class="fas fa-envelope"
+                    style="color: rgb(37, 36, 36); font-size: 2.5rem;"></i></a>
+            <i class="fab fa-facebook-square" style="color: rgb(37, 36, 36); font-size: 2.5rem;"></i>
+            <i class="fab fa-youtube-square" style="color: rgb(37, 36, 36); font-size: 2.5rem;"></i>
+            <i class="fab fa-linkedin" style="color: rgb(37, 36, 36); font-size: 2.5rem;"></i>
+            <i class="fab fa-twitter-square" style="color: rgb(37, 36, 36); font-size: 2.5rem;"></i>
+        </div>
+    </div> -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="/assets/js/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="/assets/boostrap/js/bootstrap.min.js"></script>
+    <script src="/assets/js/common.js"></script>
+    <script src="/assets/js/auth.js"></script>
+    <script src="/src/3d-cad/3d-dashboard.js"></script>
+    <script type="module" src="./model/load.js"></script>
+    <script>
+        function changeUrl() {
+            window.location.href = "/src/3d-cad/3d-dashboard.html"
+        }
+    </script>
+
+</body>
+
+</html>

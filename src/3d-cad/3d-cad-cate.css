@@ -102,33 +102,44 @@ p {
     background-color: white;
     color: black;
     height: fit-content !important;
+
 }
 
 .header-banner {
-    height: 130px;
+    height: 160px;
     width: 100%;
-    background: url("./img/back5.jpg");
+    /* background: url("./img/back5.jpg"); */
     background-repeat: no-repeat;
-    color: white;
+    color: #1858A8;
     background-attachment: fixed;
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
 }
+
+.header-banner .discription {
+    max-width: 1000px;
+    padding: 0 10px;
+    font-size: 19px;
+}
+
 
 .full-content {
     max-width: 1440px;
     padding: 0 30px;
-    padding-top: 50px;
+    padding-top: 20px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
 }
 
 .full-content-left {
-    width: 70%;
-    padding-right: 10px;
+    width: 75%;
+    padding-left: 20px;
 }
 
 .header-left-content {
@@ -141,8 +152,14 @@ p {
     align-items: center;
 }
 
+.header-left-content .tile-cate {
+    font-size: 25px;
+    color: #1858A8;
+}
+
 .header-left-content p {
     font-size: 14px;
+    margin-left: 10px;
 }
 
 .view-all {
@@ -168,10 +185,12 @@ p {
 }
 
 .content-left-models {
+    margin-top: 15px;
+    padding-left: 0 35px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
 
 }
 
@@ -252,8 +271,9 @@ p {
 }
 
 .full-content-right {
-    width: 30%;
-    padding-left: 10px;
+    width: 25%;
+    padding: 0 10px;
+    border-right: 2px solid #adadad;
 }
 
 .related-tag {
@@ -269,7 +289,7 @@ p {
 }
 
 .related-tag.gray {
-    background-color: #afafaf;
+    background-color: #dedede;
 
 }
 
@@ -294,6 +314,12 @@ p {
     margin: 5px 0;
     transition: ease-in-out 0.1s;
 }
+
+.filer-type p {
+    color: #1858A8;
+}
+
+
 
 .filer-type:hover {
     cursor: pointer;
@@ -581,4 +607,41 @@ p {
     font-weight: 600;
     color: white;
     text-align: center;
+}
+
+.category-model {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3% 2% 3%;
+}
+
+.category-model img {
+    width: 100%;
+    object-fit: cover;
+    border: 2px solid gray;
+    box-shadow: 0 2px 8px 0 rgb(85 85 85 / 15%);
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+.category-model:hover img {
+    transform: scale(1.05);
+}
+
+.category-model:hover a {
+    font-weight: 600;
+    color: rgb(156, 0, 0);
+}
+
+.category-model a {
+    margin-top: 10px;
+    color: #1858A8;
+}
+
+.text-hover:hover {
+    font-weight: 600;
+    color: rgb(156, 0, 0);
 }
